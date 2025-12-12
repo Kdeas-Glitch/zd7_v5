@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">АвтоПарк</string>
+    <string name="Dispetcher">Вход Диспетчера</string>
+    <string name="Login">Войти</string>
+    <string name="LoginDis">Логин Диспетчера</string>
+    <string name="PassDis">Пароль Диспетчера</string>
+
+    <string name="Driver">Вход Водителя</string>
+    <string name="DriverLog">Логин Водителя</string>
+    <string name="DriverPass">Пароль Водителя</string>
+
+    <string name="Passenger">Вход Пассажира</string>
+    <string name="PassengerLog">Логин Пассажира</string>
+    <string name="PassengerPass">Пароль Пассажира</string>
+
+    <string name="CheckBuses">Просмотреть Маршруты Автобусов</string>
+    <string name="CheckBus">Просмотреть Автобусы</string>
+    <string name="CheckDrivers">Просмотреть Водителей</string>
+    <string name="CheckMap">Просмотреть Маршруты</string>
+    <string name="AddBus">Добавить/Изменить</string>
+</resources>

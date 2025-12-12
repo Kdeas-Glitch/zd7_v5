@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Choose_Action"
+    android:background="@drawable/choose"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatButton
+        android:visibility="invisible"
+        android:onClick="CheckRouteBuss"
+        android:id="@+id/CheckBuses"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckBuses"
+        android:textColor="@color/white"
+        android:background="@drawable/buttonbackchoose"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="CheckBusses"
+        android:id="@+id/CheckBus"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckBus"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:background="@drawable/buttonbackchoose"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="CheckDrivers"
+        android:id="@+id/CheckDrive"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckDrivers"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:background="@drawable/buttonbackchoose"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="Checkroutes"
+        android:id="@+id/CheckMap"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckMap"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:background="@drawable/buttonbackchoose"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="AddBuss"
+        android:id="@+id/AddBus"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/AddBus"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:background="@drawable/buttonbackchoose"/>
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:id="@+id/etRouteIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Введите ID маршрута..."
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnFindBusesByRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Найти автобусы по маршруту"
+        android:visibility="visible"
+        android:background="@drawable/buttonbackchoose" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
+
+        android:padding="16dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</ScrollView>
+
+</LinearLayout>

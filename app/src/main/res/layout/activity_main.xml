@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/carousel_scene"
+    tools:context=".MainActivity"
+    >
+
+    <!-- Вход Диспечера -->
+    <FrameLayout
+        android:id="@+id/red_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/disback"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Dispetcher"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Login"
+            android:onClick="DispLog"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/buttonback"/>
+        <EditText
+            android:id="@+id/DisLog"
+            android:layout_marginStart="10dp"
+            android:hint="@string/LoginDis"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/DisPass"
+            android:layout_marginStart="10dp"
+            android:hint="@string/PassDis"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="180dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+    <!-- Вход Водителя -->
+    <FrameLayout
+        android:id="@+id/green_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bus_back_main_good"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Driver"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Login"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="100dp"
+            android:onClick="DrivLog"
+            android:background="@drawable/buttonbackdriv"/>
+        <EditText
+            android:id="@+id/DrivLog"
+            android:layout_marginStart="10dp"
+            android:hint="@string/DriverLog"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/DrivPass"
+            android:layout_marginStart="10dp"
+            android:hint="@string/DriverPass"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="180dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+    <!-- Вход Пассажира -->
+    <FrameLayout
+        android:id="@+id/blue_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/passager"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Passenger"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Login"
+            android:onClick="PassLog"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/buttonbackpass"/>
+        <EditText
+            android:id="@+id/PassLog"
+            android:layout_marginStart="10dp"
+            android:hint="@string/PassengerLog"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/PassPassw"
+            android:layout_marginStart="10dp"
+            android:hint="@string/PassengerPass"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="180dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+    <!-- Кнопки навигации -->
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#80000000"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вперед"
+            android:backgroundTint="#80000000"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
